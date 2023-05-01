@@ -1,6 +1,13 @@
 <h1>Contador: {{ counter }}</h1>
 
-<hr/>
+<hr />
 
-<button (click)="add()">+1</button>
-<button (click)="minus()">-1</button>
+<app-button-add
+  [counter]="counter"
+  (onAdd)="handleCount($event)"
+></app-button-add>
+
+<app-button-minus
+  [counter]="counter"
+  (onMinus)="handleCount($event)"
+></app-button-minus>
