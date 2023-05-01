@@ -1,0 +1,13 @@
+import { NgModule } from '@angular/core';
+import { CounterComponent } from './counter.component';
+import { ButtonAddComponent } from './button-add/button-add.component';
+import { ButtonMinusComponent } from './button-minus/button-minus.component';
+import { CommonModule } from '@angular/common';
+
+@NgModule({
+  declarations: [CounterComponent, ButtonAddComponent, ButtonMinusComponent],
+  imports: [CommonModule],
+  exports: [CounterComponent],
+})
+
+export class CounterModule {}
