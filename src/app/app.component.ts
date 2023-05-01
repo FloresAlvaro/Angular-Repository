@@ -6,13 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  counter: number = 0;
-
-  add(){
-    this.counter++;
-  }
-
-  minus(){
-    this.counter--;
-  }
+  
 }
